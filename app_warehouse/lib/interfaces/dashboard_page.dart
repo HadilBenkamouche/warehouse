@@ -3,6 +3,7 @@ import '../Services/appointment_service.dart';
 import '../Models/appointment_model.dart';
 import 'appointment_list_page.dart';
 import 'transaction_page.dart';
+import 'storage_report_page.dart';
 
 // الألوان الموحدة
 const Color primaryBrown = Color(0xFF4A2C10);
@@ -165,7 +166,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     "Generate\nReports",
                     Icons.analytics_outlined,
                     const Color(0xFF8D4E33),
-                    const Scaffold(body: Center(child: Text("Reports Page"))),
+                    const StorageReportPage(),
                   ),
                   _buildMenuCard(
                     context,
